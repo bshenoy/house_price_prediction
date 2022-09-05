@@ -6,10 +6,10 @@ from housing.component.data_ingestion import DataIngestion
 from housing.entity.artifact_entity import DataIngestionArtifact
 import sys, os
 
-class pipeline:
-    def __init__(self, config: Configuartion ) -> None:
+class Pipeline:
+    def __init__(self, config: Configuartion=Configuartion() ) -> None:
         try:
-            self.config=config
+            self.config = config
         except Exception as e:
             raise HousingException(e, sys) from e
 
@@ -21,7 +21,7 @@ class pipeline:
             raise HousingException(e, sys) from e
     def run_pipeline(self):
         try:
-            
+            data_ingestion_artifact =self.start_data_ingestion()
         except Exception as e:
             raise HousingException(e, sys) from e 
 

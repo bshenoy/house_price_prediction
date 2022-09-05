@@ -1,10 +1,19 @@
-from housing.pipeline import pipeline
-
+from housing.pipeline.pipeline import Pipeline
+from housing.exception import HousingException
+from housing.logger import logging
+import sys
 
 def main():
-    pipeline=pipeline()
-    pipeline.run_pipeline()
+    try:
+        pipeline = Pipeline()
+        pipeline.run_pipeline()
+        
 
-if __name__=="main":
+    except Exception as e:
+        logging.error(str(e))
+        raise HousingException(e, sys) from e
+
+
+if __name__=="__main__":
     main()
     
