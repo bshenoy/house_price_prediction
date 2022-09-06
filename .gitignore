@@ -128,6 +128,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-
+notebook/example.ipynb
+notebook/example2.ipynb
 housing/artifact

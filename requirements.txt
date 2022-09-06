@@ -4,4 +4,8 @@ pandas
 sklearn
 numpy
 PyYAML
+evidently
 -e .
+
+
+
