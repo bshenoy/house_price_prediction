@@ -8,8 +8,10 @@ def main():
     try:
         pipeline = Pipeline()
         pipeline.run_pipeline()
-        # datavalidationconfig = Configuartion().get_data_validation_config()
+        
+        # datavalidationconfig = Configuartion().get_data_transformation_config()
         # print(datavalidationconfig)
+
 
     except Exception as e:
         logging.error(str(e))
