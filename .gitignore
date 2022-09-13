@@ -7,10 +7,6 @@ __pycache__/
 *.so
 
 saved_models/
-
-
-
-
 # Distribution / packaging
 .Python
 build/
