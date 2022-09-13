@@ -1,5 +1,6 @@
 # machine_learning
-This is first machine learning project
-creation of flask app
+Machine learing project
+Topic: California house price prediction
+
 
 app link : https://flaskm111.herokuapp.com/
