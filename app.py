@@ -1,4 +1,3 @@
-
 from flask import Flask, request
 import sys
 
@@ -217,4 +216,3 @@ def render_log_dir(req_path):
 
 if __name__ == "__main__":
     app.run()
-
